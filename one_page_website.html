@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ocKgsBqAv2XjtfgrKUyDGKwEwZCAvBex7w&s'); /* Your image URL */
+            background-size: cover; /* Ensures the image fully covers the header */
+            background-position: center center; /* Centers the image */
+            color: white;
+            padding: 120px 20px; /* Add some space around the text */
+            text-align: center;
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            position: relative;
+            font-family: 'Arial', sans-serif; /* Modern font */
+        }
+
+        /* Adding a gradient overlay to make the text more readable */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+            z-index: 1; /* Keeps the overlay below the text */
+        }
+
+        /* Styling for the title */
+        header h1 {
+            font-size: 3.5em; /* Larger font size */
+            margin-bottom: 20px;
+            z-index: 2; /* Keeps the title above the overlay */
+            text-transform: uppercase; /* Makes the title bold and all caps */
+            letter-spacing: 2px; /* Adds spacing between letters */
+            font-weight: 700; /* Bold text */
+        }
+
+        /* Styling for the subtitle or description */
+        header p {
+            font-size: 1.5em; /* Larger text size for the description */
+            line-height: 1.6;
+            z-index: 2; /* Keeps the description above the overlay */
+            margin-top: 0;
+            font-style: italic; /* Makes the text look more artistic */
+        }
+
+        /* Add a shadow effect to the header text for better contrast */
+        header h1, header p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Styling for the images */
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Styling for the iframe (video) */
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Nature Photography</h1>
+        <p>Explore the beauty of the natural world through stunning photographs.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#photos">Photo Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>About Nature Photography</h2>
+        <p>Nature photography captures the beauty of the natural world, including landscapes, wildlife, and plants. It allows us to appreciate the wonders of our planet and inspires conservation efforts.</p>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="photos">
+        <h2>Photo Gallery</h2>
+        <img src="https://www.josephfiler.com/images/600/Canada-Mount-Assinibline-Fall-Color-10218.jpg" alt="Mountain Landscape">
+        <img src="https://sleeklens.com/wp-content/uploads/bfi_thumb/IMG_1791_2_small_7-6ek1lv1sfa4xmss3q7f7a8ymk6bd0bwwj5puvr2ottp.jpg" alt="Forest Path">
+        <img src="https://m.media-amazon.com/images/I/718qzLjgVBL.jpg" alt="Sunset Over the Ocean">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxqdD6crP50boJK6Diy_zh6O2_6KpdlH9BA&s" alt="Wildlife in Action">
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Learn More About Nature Photography</h2>
+        <iframe src="https://www.youtube.com/embed/3YTohytF9oE" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Nature Photography. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
